@@ -798,7 +798,7 @@ a {
 .slick-initialized .slick-slide {
   display: flex; }
 
-.slider-btn {
+.advantages-btn {
   position: absolute;
   bottom: 20px;
   display: flex;
@@ -811,23 +811,23 @@ a {
   border: none;
   background-color: #FAFA61;
   cursor: pointer; }
-  .slider-btn svg path {
+  .advantages-btn svg path {
     fill: #121212; }
-  .slider-btn:focus {
+  .advantages-btn:focus {
     outline: none; }
-  .slider-btn--prev {
+  .advantages-btn--prev {
     left: 100px; }
-  .slider-btn--next {
+  .advantages-btn--next {
     right: 100px; }
   @media screen and (min-width: 450px) {
-    .slider-btn {
+    .advantages-btn {
       bottom: calc(50% - 24px); }
-      .slider-btn--prev {
+      .advantages-btn--prev {
         left: 30px; }
-      .slider-btn--next {
+      .advantages-btn--next {
         right: 30px; } }
   @media screen and (min-width: 768px) {
-    .slider-btn {
+    .advantages-btn {
       display: none; } }
 
 .about-us-wrapper {
@@ -989,6 +989,38 @@ a {
     text-align: center; }
   .demontage-column p {
     text-align: center; }
+
+.demontage-btn {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #FAFA61;
+  cursor: pointer; }
+  .demontage-btn svg path {
+    fill: #121212; }
+  .demontage-btn:focus {
+    outline: none; }
+  .demontage-btn--prev {
+    left: 100px; }
+  .demontage-btn--next {
+    right: 100px; }
+  @media screen and (min-width: 450px) {
+    .demontage-btn {
+      bottom: calc(50% - 24px); }
+      .demontage-btn--prev {
+        left: 30px; }
+      .demontage-btn--next {
+        right: 30px; } }
+  @media screen and (min-width: 768px) {
+    .demontage-btn {
+      display: none; } }
 
 .contacts-wrapper {
   display: flex;
