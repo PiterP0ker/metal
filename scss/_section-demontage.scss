@@ -1,0 +1,50 @@
+.demontage-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 35px 0 90px;
+
+  @media screen and (min-width: 768px){
+    padding: 45px 0 41px;
+  }
+}
+
+.slick-slider,
+.slick-slide {
+  outline: none;
+}
+
+.demontage-column {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__box {
+    max-width: 250px;
+    outline: none;
+  }
+
+  img {
+    margin-bottom: 32px;
+    box-shadow: 13px 13px #000;
+
+    @media screen and (min-width: 768px){
+      margin-bottom: 54px;
+    }
+  }
+
+  h6 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}

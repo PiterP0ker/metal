@@ -1,0 +1,139 @@
+.contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.contacts-left {
+  width: 100%;
+  display: flex;
+
+  &__left {
+    display: none;
+
+    @media screen and (min-width: 768px){
+      width: 40%;
+      display: block;
+      
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__right {
+    width: 100%;
+    background-color:#CECECE;
+    padding-top: 47px;
+    padding-bottom: 46px;
+
+    @media screen and (min-width: 768px){
+      width: 60%;
+      padding-top: 63px;
+      padding-bottom: 135px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 44%;
+  }
+}
+
+.contacts-bg-mobile {
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.contacts-list {
+  padding-left: 52px;
+  padding-right: 20px;
+
+  li + li {
+    margin-top: 56px;
+
+    @media screen and (min-width: 768px){
+      margin-top: 85px;
+    }
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li:first-of-type::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+
+    @media screen and (min-width: 768px){
+      bottom: -41px;
+    }
+  }
+
+  li::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: calc(50% - 7px);
+    width: 15px;
+    height: 15px;
+    background-color: $primary-color;
+  }
+}
+
+.contacts-list__adress {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+
+.contacts-list__time {
+  font-size: 15px;
+  color: #676767;
+  margin-bottom: 4px;
+}
+
+.contacts-list__place {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.contacts-list__phones {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-right {
+  width: 100%;
+
+  @media screen and (min-width: 768px){
+    width: 56%;
+  }
+
+  @media screen and (max-width: 768px){
+    height: 358px;
+  }
+}  
+
+.map {
+  width: 100%;
+  height: 100%;
+}

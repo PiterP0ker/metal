@@ -1,0 +1,187 @@
+.prices-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.price-title,
+.advantages-title {
+  text-align: center;
+  padding: 8px 0;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.prices-right {
+  width: 100%;
+  background-color: #CECECE; 
+  padding-top: 53px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px){
+    width: 56%;
+    padding-top: 51px;
+    padding-bottom: 80px;
+  }
+}
+
+.prices-left {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 44%;
+  }
+}
+
+.prices-img {
+  display: none;
+  
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+}
+
+.prices-img-mobile {
+  display: block;
+  
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+}
+
+.prices-left img {
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.prices-lists {
+  padding-left: 52px;
+  padding-right: 20px;
+  max-width: 613px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 100px;  
+  }
+}
+
+.prices-list-first,
+.prices-list-second {
+  width: 100%;
+
+  li + li {
+    margin-top: 54px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: calc(50% - 7px);
+      width: 15px;
+      height: 15px;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.prices-list-first li:not(:last-child)::after,
+.prices-list-second li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -27px;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.prices-list-first + .prices-list-second {
+  margin-top: 106px;
+}
+
+.prices-list-first {
+  position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+    }
+}
+
+.metal-name,
+.metal-price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.metal-price {
+  font-weight: 900;
+}
+
+.phones {
+  background-color: $primary-color;
+}
+
+.phones-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 39px;
+
+  @media screen and (min-width: 768px){
+    height: 54px;
+  }
+
+  li {
+    font-weight: 900;
+    font-size: 12px;
+
+    @media screen and (min-width: 768px){
+      font-size: 20px;
+    }
+  }
+
+  .third, .fourth {
+    display: none;
+  }
+
+  @media screen and (min-width: 548px){
+    .third {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+    .fourth {
+      display: block;
+    }
+  }
+}

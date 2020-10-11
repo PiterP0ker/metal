@@ -1,0 +1,47 @@
+.hero {
+  &__title {
+    margin-bottom: 22px;
+
+    @media screen and (min-width:640px){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 42px;
+    color: $text-color-light;
+
+    @media screen and (min-width:640px){
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 43px;
+    }
+  }
+
+  &__about-us-link {
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 500;
+    padding: 14px 20px;
+    border: 2px solid #E5E5E5;
+    background: transparent;
+    color: $text-color-light;
+    transition: all linear 0.3s;
+
+
+    &:hover {
+      background: $primary-color;
+      color: $text-color-dark;
+      border-color: $primary-color;
+    }
+      
+    @media screen and (min-width:640px){
+      font-size: 30px;
+      line-height: 35px;
+      padding: 18px 80px;
+    }
+  }
+}
