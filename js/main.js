@@ -217,6 +217,11 @@
     $('body').toggleClass('stop-scroll');
   });
 
+  $('.header__menu-mobile li a').on('click', function () {
+    $('.main-nav-mobile').removeClass('active');
+    $('body').removeClass('stop-scroll');
+  });
+
   let advantagesSlider = $('.advantages-wrapper');
   advantagesSlider.slick({
         infinite: true,
